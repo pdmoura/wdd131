@@ -1,11 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>WDD 131: Dynamic Web Fundamentals - Pedro Alves</title>
+    <meta name="description"
+        content="This page is the index page for assignments and part of an assignment by Pedro Alves for the first week of course WDD 131 - Dynamic Web Fundamentals at BYU Idaho">
+    <meta name="author" content="Pedro Alves">
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=78848&format=png&color=000000">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+
 </head>
+
 <body>
-    <h1>PEDRO ALVES REPOSITORY</h1>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - <span id="course-title">Pedro Alves</span></h1>
+    </header>
+
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="https://linkedin.com/in/pedroalves0" class="nav-item" target="_blank"
+                rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" class="nav-item" target="_blank"
+                rel="noopener noreferrer">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/jer/1?lang=eng&id=p5-p9#p5"
+                class="nav-item" target="_blank" rel="noopener noreferrer">Scripture</a>
+            <a href="#" class="nav-item">Final Project</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="card">
+            <div class="about-header">About Me</div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Olá! Meu nome é Pedro Alves e sou um desenvolvedor web apaixonado por tecnologia. Tenho 28 anos e
+                        vivo em São Paulo, Brasil. Atualmente trabalho como desenvolvedor full-stack em uma startup de
+                        tecnologia financeira, onde desenvolvo soluções web utilizando React, Node.js e Python. Nos meus
+                        tempos livres, gosto de contribuir para projetos open source, jogar videogames e aprender novas
+                        tecnologias de programação.</p>
+                </div>
+                <img src="images/profile.jpg" alt="Pedro Alves" class="profile-img">
+            </div>
+
+            <div class="location-section">
+                <h2 class="location-title">São Paulo, Brasil</h2>
+                <div class="location-content">
+                    <div>
+                        <img src="images/brazil-flag.png" class="flag">
+
+                        <div class="flag-caption">Bandeira do Brasil</div>
+
+                        <div class="location-text">
+                            <p>São Paulo é a maior cidade do Brasil e da América do Sul, conhecida como o centro
+                                financeiro
+                                e tecnológico do país. A cidade abriga o maior hub de startups da América Latina e é
+                                considerada um dos principais centros de inovação tecnológica do mundo. Com mais de 12
+                                milhões de habitantes, São Paulo oferece inúmeras oportunidades para desenvolvedores e
+                                profissionais de tecnologia.</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="card" id="card2">
+            <div class="resources-header">Recursos de Desenvolvimento</div>
+            <ul class="resources-list">
+                <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
+                <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                <li><a href="https://codepen.io" target="_blank">CodePen</a></li>
+                <li><a href="https://reactjs.org" target="_blank">React.js</a></li>
+                <li><a href="https://nodejs.org" target="_blank">Node.js</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-title">
+                ©2025 <span class="flower">💻😁</span> Pedro Alves <span class="flower">🚀</span> São Paulo, Brasil
+            </div>
+            <div class="footer-time" id="lastModified">
+                Última modificação: <span id="currentyear"></span>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
