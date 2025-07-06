@@ -171,7 +171,7 @@
  .flag-caption {
      font-size: 1rem;
      font-style: italic;
-     color: #6b7280;
+     color: #3d3f43;
      text-align: center;
      margin-top: 0.5rem;
  }
@@ -185,12 +185,12 @@
 
  /* Resources Section */
  #card2 {
-     border-top: 4px solid #10b981;
+     border-top: 4px solid hsl(160, 40%, 23%);
  }
 
  .resources-header {
-     background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-     color: white;
+     background: hsl(160, 40%, 23%);
+     color: #ffffff;
      padding: 1rem;
      border-radius: 10px;
      text-align: center;
