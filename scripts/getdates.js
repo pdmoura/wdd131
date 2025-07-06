@@ -8,5 +8,3 @@ document.addEventListener('DOMContentLoaded',
         modifiedDate.textContent = "Last Modification: " + document.lastModified;
     }
 );
-updateTime();
-setInterval(updateTime, 1000);
