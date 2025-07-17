@@ -43,8 +43,12 @@ button {
     gap: 1rem;
 }
 
-.list {
+#list {
     padding: 0.5rem;
+}
+
+#list li {
+    border-bottom: 1px solid rgb(129, 123, 123);
 }
 
 ul {
@@ -56,6 +60,11 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+#warning {
+    text-align: center;
+    color: red;
 }
 
 @media only screen and (min-width: 32.5em) {

@@ -7,14 +7,18 @@
     <meta name="description" content="This page is part of the WDD 131 course at BYU Idaho, showcasing the Browser Object Model (BOM) activity by Pedro Alves.">
     <meta name="author" content="Pedro Alves">
     <link rel="stylesheet" href="styles/bom.css">
-    <link rel="script" href="scripts/bom.js" defer>
+    <script src="scripts/bom.js" defer></script>
+
 </head>
 <body>
     <h1>📖 Book of Mormon - Top 10</h1>
 <main>
 	<label for="favchap">Enter Book and Chapter: </label>
+    <!-- <div class="input"> -->
 	<input type="text" id="favchap" placeholder="Alma 5">
 	<button type="submit">Add Chapter</button>
+    <!-- </div> -->
+    <p id="warning"></p>
 	<ul id="list"></ul>
 </main>
 </body>
