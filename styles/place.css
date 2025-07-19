@@ -2,7 +2,6 @@
     --primary-color: #020297;
     --secondary-color: #FFCC00;
     --cards-title-color:rgba(0, 149, 62, 0.9);
-    --page-title-color:#12c45c;
     --font-size-large: 1.5rem;
 }
 
@@ -28,8 +27,6 @@ footer {
 
 h1 {
     font-size: 3rem;
-    background-color: var(--page-title-color);
-    padding: 0.5rem;
 }
 
 h2 {
