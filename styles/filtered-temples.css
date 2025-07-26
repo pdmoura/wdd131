@@ -142,7 +142,8 @@ main h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;}
+    height: 100%;
+}
 
 .container h3 {
     text-align: center;
@@ -161,6 +162,8 @@ main h2 {
 .container img {
     margin-top: 15px;
     border-radius: 15px;
+    box-shadow: 0 0 20px #686767;
+
 }
 
 /* Footer */
