@@ -135,27 +135,30 @@ main h2 {
     padding: 15px;
 }
 
-.container section{
+.container section {
     border: 1px solid black;
     padding: 10px 20px;
     border-radius: 10px;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;}
 
-.container h3{
+.container h3 {
     text-align: center;
     padding-bottom: 8px;
 }
 
-.container .label{
-    font-style: bold;
+.container .label {
+    font-weight: 900;
 }
 
-.container p{
+.container p {
     text-align: left;
     font-family: serif;
 }
 
-.container img{
+.container img {
     margin-top: 15px;
     border-radius: 15px;
 }

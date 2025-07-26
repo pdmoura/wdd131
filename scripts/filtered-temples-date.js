@@ -24,7 +24,7 @@ const temples = [
         dedicated: "2023, September, 17",
         area: 25000,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/brasilia-brazil-temple/brasilia-brazil-temple-39184-main.jpg"
+            "https://www.churchofjesuschrist.org/imgs/95f3f3abdd4811ed920ceeeeac1e15db91037802/full/1920%2C/0/default.jpg"
     },
     {
         templeName: "Aba Nigeria",
@@ -98,7 +98,46 @@ const temples = [
         imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/rexburg-idaho-temple/rexburg-idaho-temple-1057-main.jpg"
     },
-
+    {
+        templeName: "Curitiba Brazil",
+        location: "Curitiba, Brazil",
+        dedicated: "2008, June, 01",
+        area: 27850,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/curitiba-brazil-temple/curitiba-brazil-temple-1078-main.jpg"
+    },
+    {
+        templeName: "Salt Lake Utah",
+        location: "Salt Lake City, Utah, United States",
+        dedicated: "1893, April, 6-24",
+        area: 382207,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-15669.jpg"
+    },
+    {
+        templeName: "San Diego California",
+        location: "San Diego, California, United States",
+        dedicated: "1993, April, 25-30",
+        area: 72000,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/san-diego-california-temple/san-diego-california-temple-62133.jpg"
+    },
+    {
+        templeName: "Bountiful Utah",
+        location: "Bountiful, Utah, United States",
+        dedicated: "1995, January, 8-14",
+        area: 104000,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/bountiful-utah-temple/bountiful-utah-temple-35436.jpg"
+    },
+    {
+        templeName: "Provo City Center Utah",
+        location: "Provo, Utah, United States",
+        dedicated: "2016, March, 20",
+        area: 85084,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/provo-city-center-temple/provo-city-center-temple-3390.jpg"
+    }
 ];
 
 createTempleCard(temples);
