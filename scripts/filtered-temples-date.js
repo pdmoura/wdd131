@@ -114,30 +114,30 @@ const temples = [
         imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-15669-thumb.jpg"
     },
-    {
-        templeName: "San Diego California",
-        location: "San Diego, California, United States",
-        dedicated: "1993, April, 25-30",
-        area: 72000,
-        imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/san-diego-california-temple/san-diego-california-temple-62045-thumb.jpg"
-    },
-    {
-        templeName: "Bountiful Utah",
-        location: "Bountiful, Utah, United States",
-        dedicated: "1995, January, 8-14",
-        area: 104000,
-        imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/bountiful-utah-temple/bountiful-utah-temple-40476-thumb.jpg"
-    },
-    {
-        templeName: "Provo City Center Utah",
-        location: "Provo, Utah, United States",
-        dedicated: "2016, March, 20",
-        area: 85084,
-        imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/provo-city-center-temple/provo-city-center-temple-11074-thumb.jpg"
-    }
+    // {
+    //     templeName: "San Diego California",
+    //     location: "San Diego, California, United States",
+    //     dedicated: "1993, April, 25-30",
+    //     area: 72000,
+    //     imageUrl:
+    //         "https://churchofjesuschristtemples.org/assets/img/temples/san-diego-california-temple/san-diego-california-temple-62045-thumb.jpg"
+    // },
+    // {
+    //     templeName: "Bountiful Utah",
+    //     location: "Bountiful, Utah, United States",
+    //     dedicated: "1995, January, 8-14",
+    //     area: 104000,
+    //     imageUrl:
+    //         "https://churchofjesuschristtemples.org/assets/img/temples/bountiful-utah-temple/bountiful-utah-temple-40476-thumb.jpg"
+    // },
+    // {
+    //     templeName: "Provo City Center Utah",
+    //     location: "Provo, Utah, United States",
+    //     dedicated: "2016, March, 20",
+    //     area: 85084,
+    //     imageUrl:
+    //         "https://churchofjesuschristtemples.org/assets/img/temples/provo-city-center-temple/provo-city-center-temple-11074-thumb.jpg"
+    // }
 ];
 
 createTempleCard(temples);
