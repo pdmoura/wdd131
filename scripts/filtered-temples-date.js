@@ -113,7 +113,7 @@ const temples = [
         area: 382207,
         imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-15669-thumb.jpg"
-    },
+    }
     // {
     //     templeName: "San Diego California",
     //     location: "San Diego, California, United States",
