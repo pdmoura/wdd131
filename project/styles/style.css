@@ -157,7 +157,7 @@ h3 {
     margin-bottom: 10px;
     border-radius: 5px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     border-left: 5px solid var(--secondary-color);
     flex-wrap: nowrap;
@@ -181,6 +181,7 @@ h3 {
 }
 
 #dashed-text {
+    padding-right: 5px;
     text-decoration: line-through;
     font-weight: 600;
     color: #403f3f;
@@ -194,7 +195,14 @@ h3 {
     /* Space between buttons */
 }
 
+#paragraph-completed-tasks{
+    margin-bottom: 10px;
+}
 
+
+#completed-tasks-list .delete-completed-button{
+    margin-left: auto;
+}
 
 #task-list li button,
 #completed-tasks-list li button {
@@ -396,6 +404,19 @@ footer {
 }
 
 
+/* Site Plan website */
+.scenarios p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+#check-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
 
 
 
