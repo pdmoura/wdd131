@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completed Tasks To-Do List</title>
+    <meta name="description"
+        content="This page displays the completed tasks using Local Storage to save them as part of the last project of the course WDD 131 - Dynamic Web Fundamentals at BYU Idaho created by Pedro Alves">
+    <meta name="author" content="Pedro Alves">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=9fp9k4lPT8us&format=png&color=000000">
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">My To-Do List</a>
+            </div>
+            <button id="menu"></button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="completed-tasks.html">Completed Tasks</a></li>
+                <li><a href="productivity-tips.html">Productivity Tips</a></li>
+                <li><a href="references.html">References</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="completed-tasks-section">
+            <h1>Your Achievements</h1>
+            <p>A list of all the tasks you've successfully completed.</p>
+            <ul id="completed-tasks-list">
+            </ul>
+            <button id="clear-completed-button" class="clear-button" aria-label="Button to clear all tasks">Clear
+                Completed List</button>
+        </section>
+
+        <section class="motivation-section">
+            <img src="https://picsum.photos/id/883/950/550" alt="Person celebrating success" class="responsive-image">
+            <div class="motivation-text">
+                <h3>Great Job!</h3>
+                <p>Every completed task brings you closer to your goals.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> My To-Do List. All rights reserved.</p>
+        <p id="lastModified"></p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/pedroalves0/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="100" height="100" viewBox="0 0 26 26">
+                    <path
+                        d="M 21.125 0 L 4.875 0 C 2.183594 0 0 2.183594 0 4.875 L 0 21.125 C 0 23.816406 2.183594 26 4.875 26 L 21.125 26 C 23.816406 26 26 23.816406 26 21.125 L 26 4.875 C 26 2.183594 23.816406 0 21.125 0 Z M 8.039063 22.070313 L 4 22.070313 L 3.976563 9.976563 L 8.015625 9.976563 Z M 5.917969 8.394531 L 5.894531 8.394531 C 4.574219 8.394531 3.722656 7.484375 3.722656 6.351563 C 3.722656 5.191406 4.601563 4.3125 5.945313 4.3125 C 7.289063 4.3125 8.113281 5.191406 8.140625 6.351563 C 8.140625 7.484375 7.285156 8.394531 5.917969 8.394531 Z M 22.042969 22.070313 L 17.96875 22.070313 L 17.96875 15.5 C 17.96875 13.910156 17.546875 12.828125 16.125 12.828125 C 15.039063 12.828125 14.453125 13.558594 14.171875 14.265625 C 14.066406 14.519531 14.039063 14.867188 14.039063 15.222656 L 14.039063 22.070313 L 9.945313 22.070313 L 9.921875 9.976563 L 14.015625 9.976563 L 14.039063 11.683594 C 14.5625 10.875 15.433594 9.730469 17.519531 9.730469 C 20.105469 9.730469 22.039063 11.417969 22.039063 15.046875 L 22.039063 22.070313 Z">
+                    </path>
+                </svg></a>
+            <a href="https://instagram.com/pedrow_amoura" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="100" height="100" viewBox="0 0 26 26">
+                    <path
+                        d="M 7.546875 0 C 3.390625 0 0 3.390625 0 7.546875 L 0 18.453125 C 0 22.609375 3.390625 26 7.546875 26 L 18.453125 26 C 22.609375 26 26 22.609375 26 18.453125 L 26 7.546875 C 26 3.390625 22.609375 0 18.453125 0 Z M 7.546875 2 L 18.453125 2 C 21.527344 2 24 4.46875 24 7.546875 L 24 18.453125 C 24 21.527344 21.53125 24 18.453125 24 L 7.546875 24 C 4.472656 24 2 21.53125 2 18.453125 L 2 7.546875 C 2 4.472656 4.46875 2 7.546875 2 Z M 20.5 4 C 19.671875 4 19 4.671875 19 5.5 C 19 6.328125 19.671875 7 20.5 7 C 21.328125 7 22 6.328125 22 5.5 C 22 4.671875 21.328125 4 20.5 4 Z M 13 6 C 9.144531 6 6 9.144531 6 13 C 6 16.855469 9.144531 20 13 20 C 16.855469 20 20 16.855469 20 13 C 20 9.144531 16.855469 6 13 6 Z M 13 8 C 15.773438 8 18 10.226563 18 13 C 18 15.773438 15.773438 18 13 18 C 10.226563 18 8 15.773438 8 13 C 8 10.226563 10.226563 8 13 8 Z">
+                    </path>
+                </svg></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
