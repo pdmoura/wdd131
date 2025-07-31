@@ -70,7 +70,7 @@ nav {
 .logo a {
     color: var(--light-grey);
     text-decoration: none;
-    font-size: 1.8em;
+    font-size: 1.9em;
     font-weight: 700;
 }
 
@@ -196,12 +196,12 @@ h3 {
     /* Space between buttons */
 }
 
-#paragraph-completed-tasks{
+#paragraph-completed-tasks {
     margin-bottom: 10px;
 }
 
 
-#completed-tasks-list .delete-completed-button{
+#completed-tasks-list .delete-completed-button {
     margin-left: auto;
 }
 
@@ -421,6 +421,24 @@ footer {
     vertical-align: middle;
 }
 
+#title {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-bottom: 20px;
+}
+
+#title h1{
+    /* text-align: center; */
+    font-size: 1.7em;
+    margin: 0;
+}
+
+#title svg {
+    width: 30px;
+    height: 30px;
+    /* Adjust size as needed */
+}
 
 
 /* Responsive Design (Media Queries) */
@@ -467,6 +485,7 @@ footer {
     }
 
     .logo {
+        margin-right: auto;
         width: auto;
         /* Adjust logo width for better positioning */
         text-align: left;
