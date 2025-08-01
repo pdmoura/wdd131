@@ -10,7 +10,7 @@
 body {
     font-family: "Inter", sans-serif;
     font-style: normal;
-    font-optical-sizing: auto;
+    /* font-optical-sizing: auto; */
     /* Google Font */
     line-height: 1.6;
     background-color: var(--light-grey);
@@ -284,8 +284,8 @@ h3 {
 
 
 #wireframe-mobile{
-    width: 335;
-    height: 1191;
+    width: 335px;
+    height: 1191px;
     aspect-ratio: 335 / 1191;
 }
 #wireframe-desktop{
