@@ -285,7 +285,7 @@ h3 {
 
 #wireframe-mobile{
     width: 335px;
-    height: 1191px;
+    height: auto;
     aspect-ratio: 335 / 1191;
 }
 #wireframe-desktop{
@@ -441,7 +441,7 @@ footer {
     display: flex;
     align-items: center;
     /* justify-content: center; */
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 #title h1 {
@@ -453,6 +453,7 @@ footer {
 #title svg {
     width: 30px;
     height: 30px;
+    margin-bottom: 8px;
     /* Adjust size as needed */
 }
 
