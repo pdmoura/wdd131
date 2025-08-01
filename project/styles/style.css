@@ -282,19 +282,6 @@ h3 {
 
 }
 
-
-#wireframe-mobile{
-    width: 335px;
-    height: auto;
-    aspect-ratio: 335 / 1191;
-}
-#wireframe-desktop{
-    width: 100%;
-    height: auto;
-    aspect-ratio: 84 / 83;
-}
-
-
 .responsive-image {
     width: 100%;
     height: auto;
@@ -437,6 +424,18 @@ footer {
     vertical-align: middle;
 }
 
+
+#wireframe-mobile{
+    width: 335px;
+    height: auto;
+    aspect-ratio: 335 / 1191;
+}
+#wireframe-desktop{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 84 / 83;
+}
+
 #title {
     display: flex;
     align-items: center;
@@ -456,6 +455,22 @@ footer {
     margin-bottom: 8px;
     /* Adjust size as needed */
 }
+
+.wireframe-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    /* Responsive grid */
+    gap: 25px;
+}
+
+.wireframe-list h3{
+    grid-column: 1 / -1; /* Make the h3 span across all available columns */
+    grid-row: 1;         /* Explicitly place the h3 in the first row */
+    text-align: center;  /* Center the heading if it spans the whole width */
+    margin-bottom: 0;    /* Remove default margin to control spacing with gap */
+    padding-bottom: 10px; /* Add some padding below the heading */;
+}
+
 
 
 /* Responsive Design (Media Queries) */
@@ -538,6 +553,15 @@ footer {
     .productivity-tips-list {
         grid-template-columns: 1fr;
         /* Single column on small screens */
+    }
+
+        .wireframe-list {
+        grid-template-columns: 1fr;
+        /* Single column on small screens */
+    }
+    
+    .wireframe-list h3{
+        grid-column: 1 / -1;
     }
 
 }
