@@ -89,7 +89,7 @@ main h2 {
   margin-bottom: 1rem;
   grid-column: 1 / -1;
   background-color: var(--secondary-color);
-  padding: 1rem 8rem 1rem;
+  padding: 1rem ;
   border-radius: 15px;
   color: var(--primary-color);
   font-weight: 600;
@@ -183,7 +183,7 @@ button:hover {
 
 
 .required {
-  color: red;
+  color: #9d0606;
   /* Or any color you prefer */
 }
 
@@ -309,9 +309,22 @@ textarea {
 }
 
 
+#requiredLabel {
+    margin-top: 2vh;
+    font-size: medium;
+}
+
+#review {
+    text-align: center;
+    margin: 1rem;
+}
+
+
 @media (min-width: 600px) {
 
   h1 {
     font-size: 2rem;
+    text-align: center;
+    
   }
 }

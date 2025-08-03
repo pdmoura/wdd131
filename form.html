@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&family=Lato:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/form.css">
-    <script src="scripts/filtered-temples-date.js" defer></script>
+    <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
             <fieldset class="form-item">
                 <legend>Rate Us</legend>
                 <div class="item">
-                    <label for="product_name">Product Name</label>
+                    <label for="product_name">Product Name <span class="required">*</span></label>
                     <select id="product_name" name="product_name" required>
                         <option value="" selected disabled>Choose a Product ...</option>
                         <option value="product1">Product 1</option>
@@ -40,7 +40,7 @@
 
 
                 <div class="item">
-                    <p>Overall Rating</p>
+                    <p>Overall Rating <span class="required">*</span></p>
                     <div class="stars">
                         <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
                         <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
@@ -49,11 +49,11 @@
                         <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
                         <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
                     </div>
-                    
+
                 </div>
 
                 <div class="item">
-                    <label>Date of Installation
+                    <label>Date of Installation <span class="required">*</span>
                         <input type="date" id="install" name="install" required></label>
                 </div>
 
@@ -82,9 +82,10 @@
                     <input type="text" id="user" name="user">
                 </div>
 
-                <label for="feedback">Written Review</label>
+                <label for="feedback">Written Review <span class="smaller">(Optional)</span></label>
                 <textarea id="feedback" name="feedback" rows="4"
                     placeholder="Send us a message and we’ll get back to you as soon as we can! ^^"></textarea>
+                <p id="requiredLabel">Items with an <span class="required">*</span> are required.</p>
             </fieldset>
             <button type="submit" value="Post Review">Post Review</button>
         </form>
