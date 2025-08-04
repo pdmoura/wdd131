@@ -114,6 +114,7 @@ h2,
 h3 {
     color: var(--primary-color);
     margin-bottom: 15px;
+    font-size: 1.5em;
 }
 
 /* To-Do List Specific Styles */

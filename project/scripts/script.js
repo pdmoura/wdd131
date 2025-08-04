@@ -197,6 +197,8 @@ const products = [
 document.addEventListener('DOMContentLoaded',
     function () {
         const select = document.getElementById("productName");
+
+        if (!select) return; // Exit if select element is not found
         products.forEach((product) => {
             let option = document.createElement('option');
             option.innerHTML = `<option value="${product.id}">${product.name}</option>`;
