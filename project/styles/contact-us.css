@@ -1,0 +1,610 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color Palette Variables */
+:root {
+    --primary-color: #1E3A8A;
+    /* Deep Navy Blue - header/nav background */
+    --secondary-color: #24539e;
+    /* Cool Blue - buttons and interactive elements */
+    --accent-color: #ffedb3;
+    /* Soft Gold - highlights or emphasis */
+    --text-color: #333333;
+    /* Dark Gray - main text */
+    --light-grey: #f4f7f6;
+    /* Seasalt - light background for clean interface */
+    --dark-grey: #555;
+    /* Medium Gray - secondary text */
+    --success-color: #09620c;
+    /* Dark Green - for completed task indicators */
+    --danger-color: #b00303;
+    /* Vivid Red - for delete/clear actions */
+    --form-color: #f4f4f9;
+    --accent2-color: #d3d0d07e;
+    --text-color: #000000;
+    /* Solid black text for maximum contrast */
+}
+
+/* Universal Styles & Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    /* font-optical-sizing: auto; */
+    /* Google Font */
+    line-height: 1.6;
+    background-color: var(--light-grey);
+    /* Light background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* https://coolors.co/1e3a8a-24539e-ffedb3-333333-f4f7f6 */
+
+
+/* Header & Navigation */
+header {
+    background-color: var(--primary-color);
+    color: var(--light-grey);
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 105vw;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo a {
+    color: var(--light-grey);
+    text-decoration: none;
+    font-size: 1.9em;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: var(--light-grey);
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease-in-out;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+    text-decoration: overline;
+
+}
+
+/* Main Content Sections */
+
+section {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 400 / 260;
+    /* Ensures images are responsive */
+}
+
+/* References page */
+
+
+#durability:checked+label,
+#ease:checked+label,
+#performance:checked+label,
+#design:checked+label {
+    color: green;
+    font-weight: bold;
+}
+
+#durability,
+#ease,
+#performance,
+#design {
+    accent-color: green;
+    /* changes the checkmark and box color */
+}
+
+
+.references-nav {
+    list-style-type: none
+}
+
+
+.references-nav a {
+    color: inherit;
+    transition: all 0.3s ease;
+    /* Makes the link text the same color as its parent */
+}
+
+.references-nav li::before {
+    content: "🔗 ";
+}
+
+.references-nav li:hover {
+    color: #1a365d;
+    transform: translateX(2px);
+}
+
+
+
+.technologies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--primary-color);
+    color: var(--light-grey);
+    font-size: 1.1rem;
+    margin-top: auto;
+    width: 100%;
+}
+
+#lastModified {
+    padding: 1rem 0 0 0;
+    font-size: 0.9em;
+}
+
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-links svg {
+    width: 24px;
+    height: 24px;
+
+}
+
+
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    /* Position it absolutely within the header or nav for control */
+    right: 15px;
+    top: 17px;
+    /* Make sure it's visible only on smaller screens */
+    display: none;
+    cursor: pointer;
+    z-index: 100;
+    /* Ensure it's above other content */
+}
+
+#menu::before {
+    content: "☰";
+    /* Hamburger icon */
+    color: var(--light-grey);
+}
+
+#menu.open::before {
+    content: "🆇";
+    /* Close icon when menu is open */
+}
+
+
+
+/* Form styles */
+
+form {
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0.5rem;
+    display: grid;
+    background-color: var(--form-color);
+    font-size: x-large;
+}
+
+fieldset {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    height: auto;
+}
+
+legend {
+    padding: 0.5rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+
+label,
+.item p {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+
+input,
+select,
+textarea {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    background-color: var(--accent2-color);
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+input[type="radio"] {
+    width: 22px;
+    height: 22px;
+    padding: 1rem;
+}
+
+form button {
+    margin: .9rem;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+form button:hover {
+    background-color: darkgreen;
+}
+
+.item {
+    display: grid;
+    align-items: center;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border);
+}
+
+
+.required {
+    color: #9d0606;
+    /* Or any color you prefer */
+}
+
+textarea {
+    resize: none;
+    background-color: var(--accent2-color);
+}
+
+
+/* Productivity Tips Page */
+.productivity-tips-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Responsive grid */
+    gap: 25px;
+}
+
+.tip-card {
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+
+/* References page */
+.references-nav a {
+    color: inherit;
+    /* Makes the link text the same color as its parent */
+}
+
+.technologies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--primary-color);
+    color: var(--light-grey);
+    font-size: 1.1rem;
+    margin-top: auto;
+    width: 100%;
+}
+
+#lastModified {
+    padding: 1rem 0 0 0;
+    font-size: 0.9em;
+}
+
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-links svg {
+    width: 24px;
+    height: 24px;
+
+}
+
+
+
+/* stars */
+input[type="radio"] {
+    display: none;
+    position: relative;
+    caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+.stars>label {
+    color: gold;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    caret-color: rgba(0, 0, 0, 0);
+    /* remove blinking cursor*/
+}
+
+.stars>label:hover {
+    color: #000;
+}
+
+.stars>label::before {
+    content: "\2606";
+}
+
+.stars input:checked~label::before {
+    content: "\2605";
+}
+
+
+
+/* img {
+  width: 100%;
+  height: auto;
+} */
+
+input[type="text"],
+input[type="checkbox"],
+input[type="date"],
+input[type="radio"],
+textarea,
+select {
+    margin-top: .25rem;
+    padding: .5rem;
+    border: 1px solid var(--border);
+    width: 100%;
+}
+
+input:focus {
+    outline: 1px solid #999;
+}
+
+input[type="checkbox"],
+[type="radio"] {
+    width: 25px;
+    height: 25px;
+}
+
+textarea {
+    height: 6rem;
+}
+
+.radio-group {
+    margin-top: .25rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    width: max-content;
+    margin-top: .8em;
+}
+
+.checkbox-group label {
+    margin-left: .5rem;
+}
+
+.smaller {
+    font-size: 1rem;
+}
+
+
+#requiredLabel {
+    margin-top: 2vh;
+    font-size: medium;
+}
+
+#review {
+    text-align: center;
+    margin: 1rem;
+}
+
+
+/* Responsive Design (Media Queries) */
+@media (max-width: 768px) {
+
+    /* Display the hamburger menu button on small screens */
+    #menu {
+        display: block;
+    }
+
+    /* Hide the navigation links by default */
+    nav ul.open {
+        display: flex;
+        /* Show the navigation links */
+    }
+
+    /* Keep the original hiding rule for nav ul */
+    nav ul {
+        display: none;
+        margin-top: 15px;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 60px;
+        /* Adjust based on your header's height */
+        left: 0;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 99;
+        /* Ensure it's below the button but above content */
+    }
+
+    nav ul li {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .logo {
+        margin-right: auto;
+        width: auto;
+        /* Adjust logo width for better positioning */
+        text-align: left;
+        padding-bottom: 0;
+        /* Remove padding if not needed */
+    }
+
+    /* Ensure the main content doesn't get covered by the absolute positioned nav */
+    main.container {
+        padding-top: 70px;
+        /* Adjust based on your header/nav height */
+    }
+
+    .todo-input-section .input-group {
+        flex-direction: column;
+    }
+
+    #add-task-button {
+        width: 100%;
+    }
+
+    .hero-section,
+    .motivation-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-section img,
+    .motivation-section img {
+        width: 100%;
+    }
+
+
+    .productivity-tips-list {
+        grid-template-columns: 1fr;
+        /* Single column on small screens */
+    }
+}
+
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+}

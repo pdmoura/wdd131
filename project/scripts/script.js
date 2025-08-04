@@ -168,3 +168,49 @@ document.addEventListener('DOMContentLoaded', () => {
     renderTasks(); // Always try to render main tasks
     renderCompletedTasks(); // Always try to render completed tasks
 });
+
+
+const products = [
+    {
+        id: "fc-1888",
+        name: "My To-Do List App",
+        averagerating: 5
+    },
+    {
+        id: "fc-1889",
+        name: "Add task Functionality",
+        averagerating: 4.5
+    },
+    {
+        id: "fc-1890",
+        name: "Task List Vizualization",
+        averagerating: 4.5
+    },
+    {
+        id: "fc-1891",
+        name: "Task Completion Feature",
+        averagerating: 4.0
+    }
+];
+
+
+document.addEventListener('DOMContentLoaded',
+    function () {
+        const select = document.getElementById("productName");
+        products.forEach((product) => {
+            let option = document.createElement('option');
+            option.innerHTML = `<option value="${product.id}">${product.name}</option>`;
+            select.appendChild(option)
+        });
+    }
+);
+
+document.addEventListener('submit', function () {
+    let submittedReviews = localStorage.getItem('submittedReviews');
+    if (submittedReviews) {
+        submittedReviews = Number(submittedReviews) + 1;
+        localStorage.setItem('submittedReviews', `${String(submittedReviews)}`)
+    } else {
+        localStorage.setItem('submittedReviews', '1');
+    }
+});
