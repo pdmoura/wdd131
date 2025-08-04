@@ -402,7 +402,7 @@ input[type="radio"] {
 
 .stars {
     display: flex;
-    /* flex-direction: row-reverse; */
+    flex-direction: row-reverse;
     justify-content: left;
 }
 
@@ -418,7 +418,7 @@ input[type="radio"] {
 }
 
 .stars>label:hover {
-    color: #000;
+    color: #ffce2b83;
 }
 
 .stars>label::before {
